@@ -17,6 +17,13 @@
         .game-card:hover {
             transform: scale(1.05);
         }
+        /* 可选：如果你希望图片有一个最大高度以避免过高，可以添加此样式 */
+        .game-card img {
+            max-height: 200px; /* 例如，设置一个最大高度 */
+            width: 100%; /* 确保宽度仍然是100% */
+            object-fit: contain; /* 保持图片完整，不裁剪，会有留白 */
+            /* 或者 object-fit: cover; 如果你愿意让图片填充且裁剪一部分，但通常不建议与 max-height 结合 */
+        }
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHXZK2189L"></script>
@@ -41,14 +48,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div class="game-card border rounded-lg shadow-lg p-4 bg-white">
                     <h3 class="text-xl font-semibold text-blue-600">Car Chase Simulator</h3>
-                    <img src="images/car_chase_simulator_preview.jpg" alt="Car Chase Simulator Preview" class="w-full h-32 object-cover rounded">
+                    <img src="images/car_chase_simulator_preview.jpg" alt="Car Chase Simulator Preview" class="w-full rounded">
                     <p class="mt-2 text-gray-600">Experience thrilling car chases and navigate through traffic!</p>
                     <a href="games/Car%20Chase%20Simulator/index.html" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Play Now</a>
                 </div>
 
                 <div class="game-card border rounded-lg shadow-lg p-4 bg-white">
                     <h3 class="text-xl font-semibold text-blue-600">Super Mario Kart</h3>
-                    <img src="images/super_mario_kart_preview.jpg" alt="Super Mario Kart Preview" class="w-full h-32 object-cover rounded">
+                    <img src="images/super_mario_kart_preview.jpg" alt="Super Mario Kart Preview" class="w-full rounded">
                     <p class="mt-2 text-gray-600">Race against friends and foes in this exciting kart racing game!</p>
                     <a href="games/Super%20Mario%20Kart/index.html" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Play Now</a>
                 </div>
