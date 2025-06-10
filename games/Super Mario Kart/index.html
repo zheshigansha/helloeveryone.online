@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Kart - Play Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="container mx-auto px-4">
+        <header class="text-center py-8">
+            <h1 class="text-4xl font-bold text-blue-600">Super Mario Kart</h1>
+            <p class="mt-4 text-lg text-gray-700">Race to the finish line with your favorite characters!</p>
+            <a href="../../index.html" class="mt-4 inline-block bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600">Back to Home</a>
+        </header>
 
+        <main class="mt-8 text-center">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-green-500 mb-4">Play Super Mario Kart</h2>
+                <div class="w-full bg-gray-200 h-96 flex items-center justify-center rounded">
+                    <p class="text-gray-500 text-xl">
+                        **Your Super Mario Kart Game will load here.**
+                        <br>
+                        (e.g., an iframe pointing to your game file, or JavaScript for a Canvas game)
+                    </p>
+                </div>
+                <p class="mt-4 text-gray-600">May the best kart win!</p>
+            </div>
+        </main>
+
+        <footer class="text-center mt-8 py-4">
+            <p class="text-gray-500">© 2023 Hello Everyone. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
