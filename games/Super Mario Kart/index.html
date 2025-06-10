@@ -28,12 +28,13 @@
         <main class="mt-8 text-center">
             <div class="bg-white p-6 rounded-lg shadow-lg">
                 <h2 class="text-2xl font-semibold text-green-500 mb-4">Play Super Mario Kart</h2>
-                <div class="w-full bg-gray-200 h-96 flex items-center justify-center rounded">
-                    <p class="text-gray-500 text-xl">
-                        **Your Super Mario Kart Game will load here.**
-                        <br>
-                        (e.g., an iframe pointing to your game file, or JavaScript for a Canvas game)
-                    </p>
+                <div class="w-full h-96 flex items-center justify-center rounded overflow-hidden">
+                    <iframe 
+                        src='https://www.miniplay.com/embed/super-mario-kart' 
+                        style='width:100%;height:100%;' 
+                        frameborder='0' 
+                        allowfullscreen
+                    ></iframe>
                 </div>
                 <p class="mt-4 text-gray-600">May the best kart win!</p>
             </div>
