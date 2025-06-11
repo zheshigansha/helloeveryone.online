@@ -9,14 +9,14 @@
     <style>
         body {
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            background-color: #f0f2f5; /* 类似苹果的浅灰色背景 */
-            color: #333; /* 深灰色文字 */
+            background-color: #f0f2f5; /* Similar to Apple's light grey background */
+            color: #333; /* Dark grey text */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
         .container {
-            max-width: 1000px; /* 限制内容宽度，更符合苹果设计 */
+            max-width: 1000px; /* Limit content width, more aligned with Apple design */
         }
         header {
             background-color: #ffffff;
@@ -28,38 +28,38 @@
         }
         .game-frame-container {
             background-color: #ffffff;
-            border-radius: 12px; /* 更圆润的边角 */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 柔和的阴影 */
-            overflow: hidden; /* 确保内容在圆角内 */
-            margin-bottom: 2rem; /* 在游戏和玩法说明之间留出空间 */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+            overflow: hidden; /* Ensure content stays within rounded corners */
+            margin-bottom: 2rem; /* Space between game and instructions */
         }
         .apple-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: 10px 24px;
-            border-radius: 9999px; /* 更圆的按钮 */
+            border-radius: 9999px; /* More rounded button */
             font-weight: 500;
-            background-color: #007aff; /* 苹果蓝 */
+            background-color: #007aff; /* Apple blue */
             color: white;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 立体感阴影 */
-            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 3D effect shadow */
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transition */
             text-decoration: none;
             border: none;
             cursor: pointer;
-            -webkit-appearance: none; /* 移除默认样式 */
+            -webkit-appearance: none; /* Remove default styles */
             -moz-appearance: none;
             appearance: none;
         }
         .apple-button:hover {
-            background-color: #0060df; /* 悬停时深一点 */
+            background-color: #0060df; /* Slightly darker on hover */
             box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.28);
-            transform: translateY(-2px); /* 悬停时略微上浮 */
+            transform: translateY(-2px); /* Slightly lift on hover */
         }
         .apple-button:active {
-            background-color: #004dbe; /* 点击时更深 */
+            background-color: #004dbe; /* Darker on click */
             box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.15);
-            transform: translateY(1px); /* 点击时下沉 */
+            transform: translateY(1px); /* Push down on click */
         }
         .apple-secondary-button {
             background-color: #e0e0e0;
@@ -114,18 +114,18 @@
             </div>
 
             <div class="game-description-card mt-8">
-                <h2 class="text-2xl font-bold">玩法说明</h2>
-                <p class="text-lg text-gray-700 mb-4">欢迎来到《超级马里奥赛车》的奇妙世界！选择你最喜欢的马里奥角色，驾驶你的卡丁车，在充满道具和陷阱的赛道上与对手一较高下。目标是第一个冲过终点线，并利用各种道具来干扰对手或获得优势！</p>
-                <h3 class="text-xl font-semibold mb-2">操作指南:</h3>
+                <h2 class="text-2xl font-bold">How to Play</h2>
+                <p class="text-lg text-gray-700 mb-4">Welcome to the wonderful world of Super Mario Kart! Choose your favorite Mario character, drive your kart, and race against opponents on tracks filled with power-ups and traps. Your goal is to be the first to cross the finish line, utilizing various items to hinder your rivals or gain an advantage!</p>
+                <h3 class="text-xl font-semibold mb-2">Controls:</h3>
                 <ul class="list-disc pl-5">
-                    <li><strong class="text-gray-800">方向控制:</strong> 使用键盘 <kbd>方向箭头</kbd> （上、下、左、右）或 <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> 键控制卡丁车移动。</li>
-                    <li><strong class="text-gray-800">加速/刹车:</strong> <kbd>↑</kbd> 或 <kbd>W</kbd> 键加速，<kbd>↓</kbd> 或 <kbd>S</kbd> 键刹车/倒车。</li>
-                    <li><strong class="text-gray-800">使用道具:</strong> 收集赛道上的问号箱，获得随机道具。通常使用 <kbd>Space</kbd>（空格键）或 <kbd>Ctrl</kbd> 键来使用道具。</li>
-                    <li><strong class="text-gray-800">漂移:</strong> 在转弯时，结合方向键和特定按键（例如 <kbd>Shift</kbd> 或 <kbd>Z</kbd>，具体取决于模拟器设置）可以进行漂移，获得加速小喷。</li>
-                    <li><strong class="text-gray-800">视角切换:</strong> 某些模拟器版本可能支持 <kbd>C</kbd> 键切换不同视角。</li>
-                    <li><strong class="text-gray-800">避开障碍:</strong> 赛道上会有各种障碍和陷阱，如香蕉皮、龟壳等，注意避开它们，以免减速或被打翻。</li>
+                    <li><strong class="text-gray-800">Movement:</strong> Use the keyboard <kbd>Arrow Keys</kbd> (Up, Down, Left, Right) or <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys to control your kart's movement.</li>
+                    <li><strong class="text-gray-800">Accelerate/Brake:</strong> <kbd>↑</kbd> or <kbd>W</kbd> key to accelerate, <kbd>↓</kbd> or <kbd>S</kbd> key to brake/reverse.</li>
+                    <li><strong class="text-gray-800">Use Item:</strong> Collect question mark boxes on the track to get random items. Typically use <kbd>Space</kbd> bar or <kbd>Ctrl</kbd> key to use items.</li>
+                    <li><strong class="text-gray-800">Drift:</strong> While turning, combine a directional key with a specific key (e.g., <kbd>Shift</kbd> or <kbd>Z</kbd>, depending on emulator settings) to drift and get a mini-turbo boost.</li>
+                    <li><strong class="text-gray-800">Camera View:</strong> Some emulator versions might support the <kbd>C</kbd> key to switch between different camera views.</li>
+                    <li><strong class="text-gray-800">Avoid Obstacles:</strong> Be mindful of various obstacles and traps on the track, such as banana peels and Koopa Shells. Avoid them to prevent slowing down or being spun out.</li>
                 </ul>
-                <p class="mt-4 text-gray-700">掌握这些技巧，你就能在马里奥赛车中驰骋赛场，享受无限乐趣！和朋友们一起比拼，看看谁才是真正的卡丁车之王！</p>
+                <p class="mt-4 text-gray-700">Master these techniques to race through the circuits of Super Mario Kart and enjoy endless fun! Compete with friends and see who truly is the King of Karting!</p>
             </div>
         </main>
 
