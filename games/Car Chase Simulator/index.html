@@ -9,14 +9,14 @@
     <style>
         body {
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            background-color: #f0f2f5; /* 类似苹果的浅灰色背景 */
-            color: #333; /* 深灰色文字 */
+            background-color: #f0f2f5; /* Similar to Apple's light grey background */
+            color: #333; /* Dark grey text */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
         .container {
-            max-width: 1000px; /* 限制内容宽度，更符合苹果设计 */
+            max-width: 1000px; /* Limit content width, more aligned with Apple design */
         }
         header {
             background-color: #ffffff;
@@ -28,38 +28,38 @@
         }
         .game-frame-container {
             background-color: #ffffff;
-            border-radius: 12px; /* 更圆润的边角 */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 柔和的阴影 */
-            overflow: hidden; /* 确保内容在圆角内 */
-            margin-bottom: 2rem; /* 在游戏和玩法说明之间留出空间 */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+            overflow: hidden; /* Ensure content stays within rounded corners */
+            margin-bottom: 2rem; /* Space between game and instructions */
         }
         .apple-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: 10px 24px;
-            border-radius: 9999px; /* 更圆的按钮 */
+            border-radius: 9999px; /* More rounded button */
             font-weight: 500;
-            background-color: #007aff; /* 苹果蓝 */
+            background-color: #007aff; /* Apple blue */
             color: white;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 立体感阴影 */
-            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 3D effect shadow */
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transition */
             text-decoration: none;
             border: none;
             cursor: pointer;
-            -webkit-appearance: none; /* 移除默认样式 */
+            -webkit-appearance: none; /* Remove default styles */
             -moz-appearance: none;
             appearance: none;
         }
         .apple-button:hover {
-            background-color: #0060df; /* 悬停时深一点 */
+            background-color: #0060df; /* Slightly darker on hover */
             box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.28);
-            transform: translateY(-2px); /* 悬停时略微上浮 */
+            transform: translateY(-2px); /* Slightly lift on hover */
         }
         .apple-button:active {
-            background-color: #004dbe; /* 点击时更深 */
+            background-color: #004dbe; /* Darker on click */
             box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.15);
-            transform: translateY(1px); /* 点击时下沉 */
+            transform: translateY(1px); /* Push down on click */
         }
         .apple-secondary-button {
             background-color: #e0e0e0;
@@ -115,18 +115,18 @@
             </div>
 
             <div class="game-description-card mt-8">
-                <h2 class="text-2xl font-bold">玩法说明</h2>
-                <p class="text-lg text-gray-700 mb-4">在《Car Chase Simulator》中，你将扮演一名经验丰富的驾驶员，在城市中执行各种追逐任务。你的目标是躲避警车，或者追击目标车辆，同时避开障碍物和交通。挑战你的反应速度和驾驶技巧，成为最终的公路之王！</p>
-                <h3 class="text-xl font-semibold mb-2">操作指南:</h3>
+                <h2 class="text-2xl font-bold">How to Play</h2>
+                <p class="text-lg text-gray-700 mb-4">In Car Chase Simulator, you'll take on the role of an experienced driver, performing various chase missions around the city. Your goal is to evade police cars or pursue target vehicles, all while avoiding obstacles and traffic. Challenge your reflexes and driving skills to become the ultimate king of the road!</p>
+                <h3 class="text-xl font-semibold mb-2">Controls:</h3>
                 <ul class="list-disc pl-5">
-                    <li><strong class="text-gray-800">方向控制:</strong> 使用键盘 <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> 键或方向箭头控制车辆前进、后退和转向。</li>
-                    <li><strong class="text-gray-800">加速/刹车:</strong> <kbd>W</kbd> 键加速，<kbd>S</kbd> 键刹车/倒车。</li>
-                    <li><strong class="text-gray-800">手刹:</strong> 按下 <kbd>Space</kbd>（空格键）进行手刹漂移。</li>
-                    <li><strong class="text-gray-800">视角切换:</strong> 某些版本可能支持 <kbd>C</kbd> 键切换不同视角。</li>
-                    <li><strong class="text-gray-800">任务目标:</strong> 游戏界面上会显示你的当前任务目标，例如逃脱追捕时间、收集物品或到达指定地点。</li>
-                    <li><strong class="text-gray-800">避开障碍:</strong> 小心避开路上的其他车辆、建筑和障碍物，它们会减慢你的速度或造成损坏。</li>
+                    <li><strong class="text-gray-800">Movement:</strong> Use keyboard <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys or the <kbd>Arrow Keys</kbd> to control your vehicle's forward, backward, and steering movements.</li>
+                    <li><strong class="text-gray-800">Accelerate/Brake:</strong> <kbd>W</kbd> key to accelerate, <kbd>S</kbd> key to brake/reverse.</li>
+                    <li><strong class="text-gray-800">Handbrake:</strong> Press <kbd>Space</kbd> bar for a handbrake turn/drift.</li>
+                    <li><strong class="text-gray-800">Camera View:</strong> Some versions might support <kbd>C</kbd> key to switch camera views.</li>
+                    <li><strong class="text-gray-800">Mission Objectives:</strong> Your current mission objectives, such as escape time, collecting items, or reaching a specific location, will be displayed on the game interface.</li>
+                    <li><strong class="text-gray-800">Avoid Obstacles:</strong> Be careful to avoid other vehicles, buildings, and obstacles on the road, as they can slow you down or cause damage.</li>
                 </ul>
-                <p class="mt-4 text-gray-700">掌握这些基本操作，你就能在《Car Chase Simulator》的紧张刺激的追逐中游刃有余！祝你好运！</p>
+                <p class="mt-4 text-gray-700">Master these basic controls to navigate the intense and thrilling chases in Car Chase Simulator! Good luck!</p>
             </div>
         </main>
 
