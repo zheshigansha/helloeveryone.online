@@ -11,11 +11,11 @@
     <style>
         body {
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            background-color: #f0f2f5; /* 类似苹果的浅灰色背景 */
-            color: #333; /* 深灰色文字 */
+            background-color: #f0f2f5; /* Similar to Apple's light grey background */
+            color: #333; /* Dark grey text */
         }
         .container {
-            max-width: 1000px; /* 限制内容宽度，更符合苹果设计 */
+            max-width: 1000px; /* Limit content width, more aligned with Apple design */
         }
         header {
             background-color: #ffffff;
@@ -24,55 +24,55 @@
         }
         .game-card {
             background-color: #ffffff;
-            border-radius: 12px; /* 更圆润的边角 */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 柔和的阴影 */
-            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
-            overflow: hidden; /* 确保内容在圆角内 */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transition */
+            overflow: hidden; /* Ensure content stays within rounded corners */
         }
         .game-card:hover {
-            transform: translateY(-5px); /* 悬浮上移 */
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* 悬浮时更明显的阴影 */
+            transform: translateY(-5px); /* Lift on hover */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* More prominent shadow on hover */
         }
         .game-card img {
             max-height: 200px;
             width: 100%;
-            object-fit: cover; /* 裁剪以填充，效果更好 */
+            object-fit: cover; /* Crop to fill, better effect */
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
         }
         .game-card h3 {
-            color: #1a1a1a; /* 更深的标题色 */
+            color: #1a1a1a; /* Deeper title color */
         }
         .game-card p {
-            color: #666; /* 稍浅的段落色 */
+            color: #666; /* Slightly lighter paragraph color */
         }
         .apple-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: 10px 24px;
-            border-radius: 9999px; /* 更圆的按钮 */
+            border-radius: 9999px; /* More rounded button */
             font-weight: 500;
-            background-color: #007aff; /* 苹果蓝 */
+            background-color: #007aff; /* Apple blue */
             color: white;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 立体感阴影 */
-            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 3D effect shadow */
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth transition */
             text-decoration: none;
             border: none;
             cursor: pointer;
-            -webkit-appearance: none; /* 移除默认样式 */
+            -webkit-appearance: none; /* Remove default styles */
             -moz-appearance: none;
             appearance: none;
         }
         .apple-button:hover {
-            background-color: #0060df; /* 悬停时深一点 */
+            background-color: #0060df; /* Slightly darker on hover */
             box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.28);
-            transform: translateY(-2px); /* 悬停时略微上浮 */
+            transform: translateY(-2px); /* Slightly lift on hover */
         }
         .apple-button:active {
-            background-color: #004dbe; /* 点击时更深 */
+            background-color: #004dbe; /* Darker on click */
             box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.15);
-            transform: translateY(1px); /* 点击时下沉 */
+            transform: translateY(1px); /* Push down on click */
         }
         .apple-secondary-button {
             background-color: #e0e0e0;
@@ -84,10 +84,10 @@
         .apple-secondary-button:active {
             background-color: #c0c0c0;
         }
-        /* 一句话简介样式 */
+        /* Tagline style */
         .game-tagline {
             font-style: italic;
-            color: #888; /* 灰色斜体 */
+            color: #888; /* Grey italic */
             margin-top: 8px;
             font-size: 0.9em;
         }
@@ -116,14 +116,14 @@
                 <div class="game-card p-6">
                     <h3 class="text-2xl font-semibold mb-2">Car Chase Simulator</h3>
                     <img src="images/car_chase_simulator_preview.jpg" alt="Car Chase Simulator Preview" class="mb-4">
-                    <div class="game-tagline">“体验肾上腺素飙升的极速追逐，在城市中展现你的驾驶技巧！”</div>
+                    <div class="game-tagline">"Experience adrenaline-pumping high-speed pursuits and showcase your driving skills in the city!"</div>
                     <a href="games/Car%20Chase%20Simulator/index.html" class="mt-6 inline-block apple-button">Play Now</a>
                 </div>
 
                 <div class="game-card p-6">
                     <h3 class="text-2xl font-semibold mb-2">Super Mario Kart</h3>
                     <img src="images/super_mario_kart_preview.jpg" alt="Super Mario Kart Preview" class="mb-4">
-                    <div class="game-tagline">“和马里奥及他的伙伴们一起，在赛道上尽情狂飙，争夺冠军！”</div>
+                    <div class="game-tagline">"Race with Mario and his friends, speed through tracks, and compete for the championship!"</div>
                     <a href="games/Super%20Mario%20Kart/index.html" class="mt-6 inline-block apple-button">Play Now</a>
                 </div>
             </div>
