@@ -7,22 +7,89 @@
     <link rel="canonical" href="https://helloeveryone.online">
     <title>Welcome to Hello Everyone - Play Online Games</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f0f4f8; /* Light background color */
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-color: #f0f2f5; /* 类似苹果的浅灰色背景 */
+            color: #333; /* 深灰色文字 */
+        }
+        .container {
+            max-width: 1000px; /* 限制内容宽度，更符合苹果设计 */
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
         .game-card {
-            transition: transform 0.2s;
+            background-color: #ffffff;
+            border-radius: 12px; /* 更圆润的边角 */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 柔和的阴影 */
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
+            overflow: hidden; /* 确保内容在圆角内 */
         }
         .game-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px); /* 悬浮上移 */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* 悬浮时更明显的阴影 */
         }
-        /* 可选：如果你希望图片有一个最大高度以避免过高，可以添加此样式 */
         .game-card img {
-            max-height: 200px; /* 例如，设置一个最大高度 */
-            width: 100%; /* 确保宽度仍然是100% */
-            object-fit: contain; /* 保持图片完整，不裁剪，会有留白 */
-            /* 或者 object-fit: cover; 如果你愿意让图片填充且裁剪一部分，但通常不建议与 max-height 结合 */
+            max-height: 200px;
+            width: 100%;
+            object-fit: cover; /* 裁剪以填充，效果更好 */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .game-card h3 {
+            color: #1a1a1a; /* 更深的标题色 */
+        }
+        .game-card p {
+            color: #666; /* 稍浅的段落色 */
+        }
+        .apple-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 9999px; /* 更圆的按钮 */
+            font-weight: 500;
+            background-color: #007aff; /* 苹果蓝 */
+            color: white;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 立体感阴影 */
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 平滑过渡 */
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            -webkit-appearance: none; /* 移除默认样式 */
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .apple-button:hover {
+            background-color: #0060df; /* 悬停时深一点 */
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.28);
+            transform: translateY(-2px); /* 悬停时略微上浮 */
+        }
+        .apple-button:active {
+            background-color: #004dbe; /* 点击时更深 */
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.15);
+            transform: translateY(1px); /* 点击时下沉 */
+        }
+        .apple-secondary-button {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        .apple-secondary-button:hover {
+            background-color: #d0d0d0;
+        }
+        .apple-secondary-button:active {
+            background-color: #c0c0c0;
+        }
+        /* 一句话简介样式 */
+        .game-tagline {
+            font-style: italic;
+            color: #888; /* 灰色斜体 */
+            margin-top: 8px;
+            font-size: 0.9em;
         }
     </style>
 
@@ -34,36 +101,36 @@
 
       gtag('config', 'G-XHXZK2189L');
     </script>
-    </head>
+</head>
 <body class="font-sans">
     <div class="container mx-auto px-4">
         <header class="text-center py-8">
-            <h1 class="text-4xl font-bold text-green-600">Welcome to Hello Everyone</h1>
-            <p class="mt-4 text-lg text-gray-700">Play exciting online games like Car Chase Simulator and Super Mario Kart!</p>
-            <a href="games/index.html" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View All Games</a>
+            <h1 class="text-4xl font-bold text-gray-800">Welcome to Hello Everyone</h1>
+            <p class="mt-4 text-lg text-gray-600">Explore and play exciting online games for free!</p>
+            <a href="games/index.html" class="mt-6 inline-block apple-button apple-secondary-button">View All Games</a>
         </header>
 
         <main class="mt-8">
-            <h2 class="text-2xl font-semibold text-green-500">Available Games</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div class="game-card border rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="text-xl font-semibold text-blue-600">Car Chase Simulator</h3>
-                    <img src="images/car_chase_simulator_preview.jpg" alt="Car Chase Simulator Preview" class="w-full rounded">
-                    <p class="mt-2 text-gray-600">Experience thrilling car chases and navigate through traffic!</p>
-                    <a href="games/Car%20Chase%20Simulator/index.html" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Play Now</a>
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 text-center">Featured Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                <div class="game-card p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Car Chase Simulator</h3>
+                    <img src="images/car_chase_simulator_preview.jpg" alt="Car Chase Simulator Preview" class="mb-4">
+                    <div class="game-tagline">“体验肾上腺素飙升的极速追逐，在城市中展现你的驾驶技巧！”</div>
+                    <a href="games/Car%20Chase%20Simulator/index.html" class="mt-6 inline-block apple-button">Play Now</a>
                 </div>
 
-                <div class="game-card border rounded-lg shadow-lg p-4 bg-white">
-                    <h3 class="text-xl font-semibold text-blue-600">Super Mario Kart</h3>
-                    <img src="images/super_mario_kart_preview.jpg" alt="Super Mario Kart Preview" class="w-full rounded">
-                    <p class="mt-2 text-gray-600">Race against friends and foes in this exciting kart racing game!</p>
-                    <a href="games/Super%20Mario%20Kart/index.html" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">Play Now</a>
+                <div class="game-card p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Super Mario Kart</h3>
+                    <img src="images/super_mario_kart_preview.jpg" alt="Super Mario Kart Preview" class="mb-4">
+                    <div class="game-tagline">“和马里奥及他的伙伴们一起，在赛道上尽情狂飙，争夺冠军！”</div>
+                    <a href="games/Super%20Mario%20Kart/index.html" class="mt-6 inline-block apple-button">Play Now</a>
                 </div>
             </div>
         </main>
 
-        <footer class="text-center mt-8 py-4">
-            <p class="text-gray-500">© 2023 Hello Everyone. All rights reserved.</p>
+        <footer class="text-center mt-12 py-6 border-t border-gray-200">
+            <p class="text-gray-500 text-sm">© 2023 Hello Everyone. All rights reserved.</p>
         </footer>
     </div>
 </body>
